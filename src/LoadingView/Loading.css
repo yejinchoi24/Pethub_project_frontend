@@ -1,0 +1,16 @@
+/* 로딩 컨테이너 스타일 */
+.loading-container {
+  display: flex;
+  flex-direction: column; /* 텍스트와 이미지를 세로로 정렬 */
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: white;
+}
+
+/* 로딩 텍스트 스타일 */
+.loading-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #aaaaaa;
+}

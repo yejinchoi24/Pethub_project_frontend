@@ -1,0 +1,95 @@
+
+/* 헤더 전체 스타일 */
+.app-container {
+  max-width: 900px; /* 반응형 최대 너비 */
+  margin: 0 auto; /* 화면 중앙 정렬 */
+  padding: 20px;
+  border: 1px solid #ddd; /* 외부 선 */
+  border-radius: 10px; /* 둥근 모서리 */
+  background-color: white; /* 컨테이너 배경색 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  display: flex;
+  flex-direction: column; /* 위에서 아래로 배치 */
+  gap: 20px; /* 내부 요소 간 간격 */
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  border-bottom: 2px solid #ddd;
+}
+
+/* 왼쪽 텍스트 섹션 */
+.header-left {
+  max-width: 50%;
+}
+
+.header-title {
+  font-size: 3.0rem;
+  font-weight: bold;
+  color: navy;
+  margin-bottom: 10px;
+}
+
+.header-subtitle {
+  font-size: 1.8rem; /* 글씨 크기를 더 크게 설정 */
+  font-weight: bold; /* 글씨체를 굵게 변경 */
+  color: purple; /* 색상은 유지 */
+  margin-bottom: 10px; /* 아래 여백을 조금 늘림 */
+}
+
+
+.header-description {
+  font-size: 1rem;
+  color: #909090;
+  margin-bottom: 20px;
+}
+
+/* 검색 섹션 */
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin-left: -20px; /* 원하는 만큼 왼쪽으로 이동 */
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1; /*검색 버튼*/
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #6a5acd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #5741c3;
+}
+
+.header-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2개의 열 */
+  gap: 0px; /* 이미지 사이 간격 */
+  max-width: 300px; /* 컨테이너 전체 너비 제한 */
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+.header-image {
+  width: 100%; /* 그리드 셀에 맞춤 */
+  height: 150px; /* 모든 이미지의 높이를 동일하게 */
+  object-fit: cover; /* 비율을 유지하며 영역에 맞춤 */
+  border-radius: 10px; /* 이미지 둥근 모서리 */
+  border: 2px solid #ddd; /* 선택 사항: 테두리 */
+}
+

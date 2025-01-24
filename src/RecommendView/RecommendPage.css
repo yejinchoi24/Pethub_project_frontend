@@ -1,0 +1,87 @@
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    flex: 1;
+    padding: 16px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-button.active {
+    background-color: #6a5acd;
+    color: white;
+  }
+  
+  .tab-button:hover {
+    background-color: #b2a5df;
+  }
+  
+  .recommendation-container {
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommendation-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  
+  .hospital-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .details-button,
+  .call-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .details-button {
+    background-color: #6a5acd;
+    color: white;
+  }
+  
+  .details-button:hover {
+    background-color: #5741c3;
+  }
+  
+  .call-button {
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .call-button:hover {
+    background-color: #45a049;
+  }
+  

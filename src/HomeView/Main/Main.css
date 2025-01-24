@@ -1,0 +1,174 @@
+/* 메인 컨테이너 */
+.main-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 왼쪽 정렬 */
+  text-align: align; /* 텍스트도 왼쪽 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  
+}
+
+/* 카테고리 버튼 컨테이너 */
+.categories {
+  display: flex;
+  gap: 15px; /* 버튼 간 간격 */
+  margin-bottom: 20px; /* 비용박스와 간격 추가 */
+  justify-content: flex-start; /* 버튼을 왼쪽 정렬 */
+  width: 100%; /* 전체 너비에 맞춤 */
+  overflow-x: auto; /* 버튼이 많으면 스크롤 가능 */
+  padding: 10px 0;
+}
+
+/* 그룹 버튼 스타일 */
+.group-tabs {
+  display: flex; /* 버튼들을 가로로 정렬 */
+  gap: 20px; /* 버튼 간 간격 */
+  justify-content: center; /* 버튼을 가운데 정렬 */
+  align-items: center; /* 버튼 수직 가운데 정렬 */
+  margin-bottom: 20px; /* 아래 요소와 간격 */
+  width: 100%; /* 전체 너비에 맞춤 */
+  padding: 10px 0; /* 상하 여백 추가 */
+}
+
+/* 개별 그룹 버튼 스타일 */
+.group-tab {
+  display: flex;
+  align-items: center; /* 텍스트를 수직 중앙 정렬 */
+  justify-content: center; /* 텍스트를 수평 중앙 정렬 */
+  padding: 10px 50px; /* 버튼 안쪽 여백 */
+  border: 2px solid #6a5acd; /* 보라색 테두리 */
+  border-radius: 10px; /* 둥근 모서리 */
+  background-color: #f9f9f9; /* 기본 배경색 */
+  color: #333; /* 기본 텍스트 색상 */
+  font-size: 1rem; /* 텍스트 크기 */
+  font-weight: bold; /* 텍스트 굵기 */
+  cursor: pointer; /* 클릭 가능 */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* 애니메이션 효과 */
+}
+
+
+.group-tab.active {
+  background-color: #6a5acd; /* 활성화된 버튼 배경색 */
+  color: white; /* 활성화된 버튼 텍스트 색상 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 활성화된 버튼 그림자 */
+  border: 2px solid #5741c3; /* 강조된 테두리 */
+}
+
+/* 개별 카테고리 버튼 */
+.category-item {
+  display: flex;
+  flex-direction: column; /* 아이콘과 텍스트 세로 정렬 */
+  align-items: center; /* 아이콘과 텍스트를 수평 가운데 정렬 */
+  justify-content: center; /* 아이콘과 텍스트를 수직 가운데 정렬 */
+  gap: 5px; /* 아이콘과 텍스트 간격 */
+  width: 150px; /* 버튼 크기 */
+  height: 80px;
+  padding: 10px;
+  border: 1px solid navy; /* 기본 테두리 */
+  border-radius: 10px; /* 둥근 모서리 */
+  background-color: #f9f9f9; /* 기본 배경색 */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  text-align: center; /* 텍스트 중앙 정렬 */
+  font-size: 1rem; /* 텍스트 크기를 .cost-text와 동일하게 */
+  font-weight: bold; /* 텍스트 굵기를 .cost-text와 동일하게 */
+  color: #333; /* 텍스트 색상을 .cost-text와 동일하게 */
+  margin: 0 auto; /* 부모 컨테이너 내에서 수평 가운데 정렬 */
+  box-sizing: border-box; /* 패딩 포함 너비 계산 */
+}
+
+/* 버튼 활성화 상태 */
+.category-item.active {
+  background-color: #6a5acd; /* 활성화된 버튼 배경색 */
+  color: white; /* 활성화된 버튼 텍스트 색상 */
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 활성화된 버튼 그림자 */
+  border: 2px solid #5741c3; /* 강조된 테두리 */
+}
+
+/* 비용 정보 섹션 */
+.cost-details {
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  gap: 20px; /* 각 박스 간 간격 */
+  align-items: flex-start; /* 왼쪽 정렬 */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+
+/* 비용 박스 */
+.cost-box {
+  display: flex;
+  align-items: center; /* 아이콘과 텍스트를 수직 가운데 정렬 */
+  gap: 15px; /* 아이콘과 텍스트 간 간격 */
+  width: 500px; /* 고정된 너비 */
+  padding: 15px; /* 내부 여백 */
+  background-color: #f0f4ff; /* 연한 파란색 */
+  border: 2px solid #6a5acd; /* 보라색 테두리 */
+  border-radius: 10px; /* 둥근 모서리 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  margin: 0 auto; /* 수평 가운데 정렬 */
+  box-sizing: border-box; /* 패딩 포함한 너비 계산 */
+}
+
+/* 체크 아이콘 스타일 */
+.cost-icon {
+  background-color: #ffffff; /* 아이콘 배경 흰색 */
+  color: #6a5acd; /* 보라색 아이콘 */
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px;
+  border: 2px solid #6a5acd;
+  border-radius: 5px;
+}
+
+/* 가격 텍스트 스타일 */
+.cost-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* 수직 가운데 정렬 */
+  gap: 80px; /* 레이블과 가격 간 간격 */
+  font-weight: bold;
+}
+
+.cost-text label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.cost-text span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+/* 공지사항 스타일 */
+.notice {
+  display: flex;
+  align-items: center; /* 아이콘과 텍스트 수직 가운데 정렬 */
+  justify-content: center; /* 아이콘과 텍스트 수평 가운데 정렬 */
+  gap: 8px; /* 아이콘과 텍스트 간격 */
+  background-color: #f0f4ff; /* 연한 파란색 배경 */
+  color: #333; /* 텍스트 색상 */
+  font-size: 1rem; /* 텍스트 크기 */
+  font-weight: bold; /* 텍스트 굵기 */
+  padding: 10px; /* 여백 */
+  border: 1px solid #6a5acd; /* 얇은 보라색 테두리 */
+  border-radius: 8px; /* 둥근 모서리 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  width: 100%; /* 헤더 너비와 맞춤 */
+  box-sizing: border-box; /* padding 포함한 너비 계산 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+
+/* 확성기 아이콘 스타일 */
+.notice-icon {
+  font-size: 1rem; /* 아이콘 크기 */
+  color: #6a5acd; /* 아이콘 색상 */
+}

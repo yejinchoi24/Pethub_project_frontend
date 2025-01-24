@@ -1,0 +1,80 @@
+.rating-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+}
+
+.rating-title {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.rating-content {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  align-items: center;
+}
+
+.average-rating-container {
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.average-rating {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.rating-count {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.rating-distribution {
+  flex: 1.2;
+}
+
+.rating-item {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
+
+.rating-score {
+  width: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.rating-bar {
+  flex: 1;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 0 8px;
+  position: relative;
+}
+
+.rating-bar-fill {
+  height: 100%;
+  background-color: #ffcc00;
+  border-radius: 5px;
+}
+
+.rating-percentage {
+  width: 40px;
+  font-size: 0.9rem;
+  text-align: right;
+  color: #666;
+}

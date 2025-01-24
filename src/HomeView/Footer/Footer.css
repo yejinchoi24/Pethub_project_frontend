@@ -1,0 +1,102 @@
+/* 푸터 컨테이너 */
+.footer-container {
+  width: 100%;
+  background-color: #f0f4ff;
+  border-top: 2px solid #6a5acd;
+  padding: 20px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 푸터 제목 */
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6a5acd;
+  margin-bottom: 10px;
+}
+
+/* 랭킹 리스트 */
+.ranking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* 각 병원 간 간격 */
+}
+
+/* 랭킹 항목 */
+.ranking-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ranking-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 병원 정보 */
+.hospital-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* 병원 이미지 */
+.hospital-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid #ddd;
+}
+
+/* 병원 세부 정보 */
+.hospital-details {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.hospital-name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+.rating {
+  color: #ff9900;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.hospital-extra-info {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* 상세정보 보기 버튼 */
+.view-details-button {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-details-button:hover {
+  background-color: #5741c3;
+}

@@ -1,0 +1,169 @@
+/* 병원 상세 페이지 스타일 */
+.hospital-detail-page {
+  padding: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 헤더 스타일 */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.back-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 병원 정보 스타일 */
+.hospital-info {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.hospital-image {
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.hospital-page-image {
+  margin-left: 10px;
+  width: 160px !important;
+  height: 160px !important;
+}
+
+
+.hospital-details {
+  flex: 1;
+}
+
+.hospital-details h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.heart {
+  color: red;
+}
+
+.info-item {
+  display: flex;
+  margin-top: 8px;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #555;
+  width: 100px;
+}
+
+.info-value {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+
+
+/* 예약하기 버튼 스타일 */
+.reservation-button {
+  position: fixed;
+  bottom: 20px; /* 화면 하단에서 버튼 위치 */
+  left: 50%; /* 화면 중앙 정렬 */
+  transform: translateX(-50%); /* 버튼의 중심점을 기준으로 이동 */
+  width: calc(100% - 40px); /* 화면 양쪽 여백 20px씩 */
+  max-width: 900px; /* 최대 너비 */
+  background-color: #6a5acd; /* 버튼 배경색 */
+  color: white; /* 버튼 텍스트 색상 */
+  font-size: 18px; /* 텍스트 크기 */
+  font-weight: bold; /* 텍스트 두께 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  padding: 15px 0; /* 버튼 높이를 위한 내부 여백 */
+  border: none; /* 테두리 제거 */
+  border-radius: 10px; /* 둥근 모서리 */
+  cursor: pointer; /* 포인터 커서 */
+  text-decoration: none; /* 링크 스타일 제거 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  z-index: 100; /* 다른 요소 위에 표시 */
+}
+
+.reservation-button:hover {
+  background-color: #5741c3; /* 호버 시 버튼 색상 변경 */
+}
+
+
+
+/* 리뷰 섹션 스타일 */
+.reviews-section {
+  margin-top: 24px; /* 위쪽 여백 */
+  padding-bottom: 80px; /* 버튼과 겹치지 않도록 하단 여백 추가 */
+}
+
+.reviews-section h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.reviews-section h4 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.review {
+  padding: 16px;
+  margin-bottom: 12px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.review-rating {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff9900;
+}
+
+.review-details p {
+  margin: 4px 0;
+  color: #555;
+}
+
+/* 더보기 버튼 스타일 */
+.load-more {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.load-more:hover {
+  background-color: #5741c3;
+}
